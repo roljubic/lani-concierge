@@ -154,6 +154,15 @@
     @media(max-width:1024px){.wrap{padding:0 24px}.eg,.cg{grid-template-columns:1fr;gap:50px}.sg{grid-template-columns:1fr 1fr}.vg,.tg{grid-template-columns:1fr}.fg2{grid-template-columns:1fr 1fr;gap:36px}.nl{display:none}.bg{display:flex}.cbi{grid-template-columns:1fr;gap:28px}.hst-row{flex-wrap:wrap}}
     @media(max-width:640px){.wrap{padding:0 18px}section{padding:80px 0}h1{font-size:2.6rem}.hbtns{flex-direction:column}.fr{grid-template-columns:1fr}.sg{grid-template-columns:1fr}.fg2{grid-template-columns:1fr}.cf{padding:32px 24px}}
   #scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#2a9090,#5ab8b8);z-index:9999;transition:width .1s linear;}
+  
+  /* Trust Badge Strip */
+  .trust-strip{padding:22px 0;border-top:1px solid rgba(42,144,144,0.12);border-bottom:1px solid rgba(42,144,144,0.12);background:#06080d;overflow:hidden;}
+  .trust-strip__inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center;}
+  .trust-strip__label{font-family:Arial,sans-serif;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(42,144,144,0.5);white-space:nowrap;flex-shrink:0;}
+  .trust-strip__div{width:1px;height:18px;background:rgba(42,144,144,0.12);flex-shrink:0;}
+  .trust-strip__logos{display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center;}
+  .trust-strip__logo{font-family:Georgia,serif;font-size:12.5px;color:rgba(255,255,255,0.2);letter-spacing:0.3px;white-space:nowrap;}
+  @media(max-width:600px){.trust-strip__label,.trust-strip__div{display:none;}.trust-strip__logos{gap:16px;}.trust-strip__logo{font-size:11px;}}
   </style>
 
   <script type="application/ld+json">
@@ -238,7 +247,20 @@
     </div>
   </section>
 
-  <section class="svcs" id="services"><div class="wrap">
+  <section class="svcs" id="services">
+<div class="trust-strip">
+  <div class="trust-strip__inner">
+    <span class="trust-strip__label">As Featured In</span>
+    <div class="trust-strip__div"></div>
+    <div class="trust-strip__logos">
+      <span class="trust-strip__logo">Honolulu Magazine</span>
+      <span class="trust-strip__logo">Condé Nast Traveler</span>
+      <span class="trust-strip__logo">Travel + Leisure</span>
+      <span class="trust-strip__logo">Hawaii Business Magazine</span>
+      <span class="trust-strip__logo">Robb Report</span>
+    </div>
+  </div>
+</div><div class="wrap">
   <div class="sl r">What We Offer</div>
   <h2 class="st r d1">Every Detail.<br/><em style="font-style:italic;color:var(--teal2)">Arranged Before You Arrive.</em></h2>
   <div class="sg">
