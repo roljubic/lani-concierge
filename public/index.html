@@ -163,6 +163,14 @@
   .trust-strip__logos{display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center;}
   .trust-strip__logo{font-family:Georgia,serif;font-size:12.5px;color:rgba(255,255,255,0.2);letter-spacing:0.3px;white-space:nowrap;}
   @media(max-width:600px){.trust-strip__label,.trust-strip__div{display:none;}.trust-strip__logos{gap:16px;}.trust-strip__logo{font-size:11px;}}
+  
+    @keyframes cta-pulse-btnt {
+      0%,100% { filter: drop-shadow(0 0 0px #2a909000); }
+      50% { filter: drop-shadow(0 0 10px #2a909060) drop-shadow(0 0 20px #2a909030); }
+    }
+    .btn-t:not(:hover) {
+      animation: cta-pulse-btnt 2.8s ease-in-out infinite;
+    }
   </style>
 
   <script type="application/ld+json">
