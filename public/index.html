@@ -260,7 +260,7 @@
   <div class="hbtns r d3"><a href="#contact" class="btn-t">Book Your Arrival</a><a href="#services" class="btn-o">Our Services</a></div>
   <div class="hst-row r d4">
     <div class="hst"><span class="hsn">2hr</span><div class="hsl">Pre-Arrival Lead Time</div></div>
-    <div class="hst"><span class="hsn">50+</span><div class="hsl">Vendor Partners</div></div>
+    <div class="hst"><span class="hsn" data-count="50" data-suffix="+">0+</span><div class="hsl">Vendor Partners</div></div>
     <div class="hst"><span class="hsn">24/7</span><div class="hsl">Concierge Line</div></div>
     <div class="hst"><span class="hsn">100%</span><div class="hsl">Personalized</div></div>
   </div>
@@ -542,6 +542,9 @@
   document.querySelectorAll('.r').forEach(r=>obs.observe(r));
   setTimeout(()=>document.querySelectorAll('.hero .r').forEach(r=>r.classList.add('on')),100);
   window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('s',scrollY>60);const p=document.getElementById('scroll-progress');if(p)p.style.width=Math.min((scrollY/(document.documentElement.scrollHeight-innerHeight))*100,100)+'%';});
+  function animateCounter(el){const target=parseInt(el.getAttribute('data-count'));const suffix=el.getAttribute('data-suffix')||'';if(!target)return;let current=0;const step=target/50;const timer=setInterval(()=>{current=Math.min(current+step,target);el.textContent=Math.round(current)+suffix;if(current>=target)clearInterval(timer);},25);}
+  const statObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){animateCounter(e.target);statObs.unobserve(e.target);}});});
+  document.querySelectorAll('[data-count]').forEach(el=>statObs.observe(el));
   (function(){
     const burger=document.getElementById('burger');
     const nav=document.querySelector('.nl');
