@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lani-concierge.onrender.com/sitemap.xml
