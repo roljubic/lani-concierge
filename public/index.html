@@ -398,7 +398,22 @@
       <span class="trust-strip__logo">Robb Report</span>
     </div>
   </div>
-</div><div class="wrap">
+</div>
+
+<!-- RESULTS STRIP -->
+<div id="lani-results" style="background:#06080d;padding:44px 0;border-top:1px solid rgba(42,144,144,0.15);border-bottom:1px solid rgba(42,144,144,0.15);">
+  <div style="max-width:1100px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:32px;text-align:center;">
+    <div><div class="lani-num" data-target="24" style="font-family:Georgia,serif;font-size:3rem;color:#2a9090;font-weight:400;">0</div><div style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:8px;">Hr Response Guarantee</div></div>
+    <div><div class="lani-num" data-target="48" style="font-family:Georgia,serif;font-size:3rem;color:#2a9090;font-weight:400;">0</div><div style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:8px;">Hr Arrival Arrangement</div></div>
+    <div><div class="lani-num" data-target="60" style="font-family:Georgia,serif;font-size:3rem;color:#2a9090;font-weight:400;">0</div><div style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:8px;">+ Vendor Partners</div></div>
+    <div><div class="lani-num" data-target="98" style="font-family:Georgia,serif;font-size:3rem;color:#2a9090;font-weight:400;">0</div><div style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:8px;">% Guest Satisfaction</div></div>
+    <div><div style="font-family:Georgia,serif;font-size:3rem;color:#2a9090;font-weight:400;">5★</div><div style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:8px;">Avg Experience Rating</div></div>
+  </div>
+  <p style="text-align:center;font-size:0.7rem;color:rgba(255,255,255,0.2);margin:20px 0 0;letter-spacing:1px;">BASED ON MEMBER & GUEST EXPERIENCE PORTFOLIO</p>
+</div>
+<script>(function(){var els=document.querySelectorAll('#lani-results .lani-num');var started=false;function go(){if(started)return;started=true;els.forEach(function(el){var t=parseInt(el.getAttribute('data-target'),10);var d=1600;var s=Math.ceil(d/t);var c=0;var i=setInterval(function(){c++;el.textContent=c;if(c>=t){el.textContent=t;clearInterval(i);}},s);});}var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)go();});},{threshold:0.3});els.forEach(function(el){obs.observe(el);});})();</script>
+
+<div class="wrap">
   <div class="sl r">What We Offer</div>
   <h2 class="st r d1">Every Detail.<br/><em style="font-style:italic;color:var(--teal2)">Arranged Before You Arrive.</em></h2>
   <div class="sg">
